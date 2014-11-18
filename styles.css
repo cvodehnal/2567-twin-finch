@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+}
+
+/* This is so the browser will know how to size the content, adjusts automatically keeps boxes within rows*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* This wraps everything up into a certain width*/
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* This is so we can see the grid better*/
+.grid {
+  background-color: pink;
+}
+
+/* This is making the grid expand to contain the floated columns*/
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* To show the nested elements*/
+.nested {
+  background-color: aqua;
+}
+
+/* Floats all columns to the left, gives 50px of padding to the right, and a border*/
+[class*='column-'] {
+  float: left;
+  padding-right: 50px;
+  border: 1px solid black;
+}
+
+/* Acts as gutter(I don't know if this is supposed to be here)*/
+[class*='column-'] {
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+/* gives nested grids padding to left and right*/
+.grid .grid [class*='column-'] {
+  padding: 0 25px;
+}
+
+/* Gives margin a negative value so it aligns with what is inside*/
+.grid .grid {
+  margin: 0 -25px 25px;
+}
+
+/* Lets the end of the column butt up to the edge of the browser*/
+[class*='column-']:last-of-type {
+  padding-right: 0;
+}
+
+aside {
+	position: fixed;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* The columns for the grid*/
+.column-1-12 {
+  width: 8.33%;
+}
+
+.column-2-12 {
+  width: 16.66%;
+}
+
+.column-3-12 {
+  width: 25%;
+}
+
+.column-4-12 {
+  width: 33.33%;
+}
+
+.column-5-12 {
+  width: 41.66%;
+}
+
+.column-6-12 {
+  width: 50%;
+}
+
+.column-7-12 {
+  width: 58.33%;
+}
+
+.column-8-12 {
+  width: 66.66%;
+}
+
+.column-9-12 {
+  width: 75%;
+}
+
+.column-10-12 {
+  width: 83.33%;
+}
+
+.column-11-12 {
+  width: 91.66%;
+}
+
+.column-12-12 {
+  width: 100%;
+}
+
+/*offset grid*/
+.offset-1-12 {
+	margin: 8.33%;
+}
+
+.offset-2-12 {
+	margin: 16.66%;
+}
+
+.offset-3-12 {
+	margin: 25%;
+}
+
+.offset-4-12 {
+	margin: 33.33%;
+}
+
+.offset-5-12 {
+	margin: 41.66%;
+}
+
+.offset-6-12 {
+	margin: 50%;
+}
+
+.offset-7-12 {
+	margin: 58.33%;
+}
+
+.offset-8-12 {
+	margin: 66.66%;
+}
+
+.offset-9-12 {
+	margin: 75%;
+}
+
+.offset-10-12 {
+	margin: 83.33%;
+}
+
+.offset-11-12 {
+	margin: 91.66%;
+}
+
+/*helper classes*/
+.clearfix {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+/* After minimizing the screen to 700px the items will stack*/
+@media only screen and (max-width: 700px) {
+[class*='column-'] {
+  width: 100%;
+}
+
+[class*='offset-'] {
+  margin-left: 0;
+}
+
+.column-mobile {
+	width: 50%;
+}
+  
+/*figure out a wrapper to contain the entire thing*/
