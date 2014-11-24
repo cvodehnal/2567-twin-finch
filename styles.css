@@ -5,11 +5,28 @@ body {
 	background-color: black;
 }
 
+p, h1 {
+	text-align: center;
+}
+
+.button {
+	margin-top: -70px;
+}
+
 /* This is so the browser will know how to size the content, adjusts automatically keeps boxes within rows*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.icons {
+	width: 1.5%;
+	margin-right: 15px;
+}
+
+.logo {
+	width: 100%;
 }
 
 /* This wraps everything up into a certain width*/
@@ -35,17 +52,12 @@ body {
   background-color: aqua;
 }
 
-/* Floats all columns to the left, gives 50px of padding to the right, and a border*/
-[class*='column-'] {
-  float: left;
-  padding-right: 50px;
-  border: 1px solid black;
-}
-
-/* Acts as gutter(I don't know if this is supposed to be here)*/
+/* Floats all columns to the left, gives padding and margin and a border*/
 [class*='column-'] {
 	padding-right: 20px;
 	margin-bottom: 20px;
+	float: left;
+	border: 1px solid black;
 }
 
 /* gives nested grids padding to left and right*/
@@ -63,12 +75,14 @@ body {
   padding-right: 0;
 }
 
-aside {
+nav {
 	position: fixed;
+	top: 0;
 }
 
 li {
 	list-style-type: none;
+	padding: 0px 0px .5% 0px;
 }
 
 /* The columns for the grid*/
@@ -122,47 +136,47 @@ li {
 
 /*offset grid*/
 .offset-1-12 {
-	margin: 8.33%;
+	margin-left: 8.33%;
 }
 
 .offset-2-12 {
-	margin: 16.66%;
+	margin-left: 16.66%;
 }
 
 .offset-3-12 {
-	margin: 25%;
+	margin-left: 25%;
 }
 
 .offset-4-12 {
-	margin: 33.33%;
+	margin-left: 33.33%;
 }
 
 .offset-5-12 {
-	margin: 41.66%;
+	margin-left: 41.66%;
 }
 
 .offset-6-12 {
-	margin: 50%;
+	margin-left: 50%;
 }
 
 .offset-7-12 {
-	margin: 58.33%;
+	margin-left: 58.33%;
 }
 
 .offset-8-12 {
-	margin: 66.66%;
+	margin-left: 66.66%;
 }
 
 .offset-9-12 {
-	margin: 75%;
+	margin-left: 75%;
 }
 
 .offset-10-12 {
-	margin: 83.33%;
+	margin-left: 83.33%;
 }
 
 .offset-11-12 {
-	margin: 91.66%;
+	margin-left: 91.66%;
 }
 
 /*helper classes*/
