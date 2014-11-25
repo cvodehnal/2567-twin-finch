@@ -1,10 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-	background-color: black;
-}
-
 p, h1 {
 	text-align: center;
 }
@@ -17,12 +13,16 @@ p, h1 {
 }
 
 .icons {
-	width: 1.5%;
-	margin-right: 15px;
+	width: 17px;
+	margin-right: 10px;
 }
 
 .logo {
 	width: 100%;
+}
+
+.logo-footer {
+	max-width: 8.33%;
 }
 
 .feedphoto {
@@ -220,5 +220,37 @@ footer {
 .column-mobile {
 	width: 50%;
 }
-  
+
+.logo {
+	width: 100%;
+}
+
+.nav-link {
+	display: none;
+}
+
+.wrapper {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.review {
+	display: none;
+}
+
+#seasonal-teaser {
+	display: none;
+}
+
+#brew-tips {
+	display: none;
+}
+
 /*figure out a wrapper to contain the entire thing*/
+}
