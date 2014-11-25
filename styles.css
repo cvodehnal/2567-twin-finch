@@ -44,8 +44,27 @@ p, h1 {
 	margin: 0 auto;
 }
 
-/* This is so we can see the grid better*/
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0;
+  font-size: 12px;
+}
 
+input:focus {
+  outline: 0;
+}
+
+button {
+  background: transparent;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 0;
+  margin-top: 25px;
+  cursor: pointer;
+}
 
 /* This is making the grid expand to contain the floated columns*/
 .grid:after {
@@ -62,7 +81,6 @@ p, h1 {
 	padding-right: 20px;
 	margin-bottom: 20px;
 	float: left;
-	border: 1px solid black;
 }
 
 /* gives nested grids padding to left and right*/
@@ -248,5 +266,4 @@ nav {
 	display: none;
 }
 
-/*figure out a wrapper to contain the entire thing*/
 }
