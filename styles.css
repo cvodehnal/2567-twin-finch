@@ -27,7 +27,7 @@ p, h1 {
 
 .feedphoto {
 	max-width: 33.33%;
-	margin-right: 10%;
+	margin: 10%;
 }
 
 .map {
@@ -45,9 +45,7 @@ p, h1 {
 }
 
 /* This is so we can see the grid better*/
-.grid {
-  background-color: pink;
-}
+
 
 /* This is making the grid expand to contain the floated columns*/
 .grid:after {
@@ -57,9 +55,7 @@ p, h1 {
 }
 
 /* To show the nested elements*/
-.nested {
-  background-color: aqua;
-}
+
 
 /* Floats all columns to the left, gives padding and margin and a border*/
 [class*='column-'] {
