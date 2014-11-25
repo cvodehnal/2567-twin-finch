@@ -9,10 +9,6 @@ p, h1 {
 	text-align: center;
 }
 
-.button {
-	margin-top: -70px;
-}
-
 /* This is so the browser will know how to size the content, adjusts automatically keeps boxes within rows*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -27,6 +23,19 @@ p, h1 {
 
 .logo {
 	width: 100%;
+}
+
+.feedphoto {
+	max-width: 33.33%;
+	margin-right: 10%;
+}
+
+.map {
+	max-width: 100%;
+}
+
+.product {
+	max-width: 100%;
 }
 
 /* This wraps everything up into a certain width*/
@@ -83,6 +92,10 @@ nav {
 li {
 	list-style-type: none;
 	padding: 0px 0px .5% 0px;
+}
+
+footer {
+	text-align: center;
 }
 
 /* The columns for the grid*/
