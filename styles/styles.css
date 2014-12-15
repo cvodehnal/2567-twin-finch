@@ -6,24 +6,131 @@ font-family: 'Montserrat', sans-serif;*/
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300|Montserrat:400,700);
 
-h1, h2 {
-	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-}
-
-p {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	line-height: 175%;
-}
-
 /* This is so the browser will know how to size the content, adjusts automatically keeps boxes within rows*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* This wraps everything up into a certain width*/
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+    background-image: url('../images/grayscale-satin.jpg');
+	background-position: center;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+body {
+	background-color: #000000;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #808080;
+}
+
+h2 {
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #7F182F;
+}
+
+p {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 175%;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+small {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff
+}
+
+footer {
+	text-align: center;
+	float:left;
+}
+
+footer img, footer a, footer small {
+	clear:left;
+	float:left;
+}
+
+/* unvisited link */
+a:link {
+
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    text-decoration: underline;	
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+li {
+	list-style-type: none;
+	padding: 0px 0px .5% 0px;
+}
+
+.nav-link {
+	color: #ffffff;
+}
+
+a.nav-link:hover {
+	color: #7F182F;
+}
+
+a.button {
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 20px;
+	background: #808080;
+	padding: 25px 5px 25px 5px;
+	text-decoration: none;
+	margin: 5px -5px 5px -5px;
+	}
+
+a.button:hover {
+	background: #7F182F;
+	text-decoration: none;
+}
+
+a:link {
+	color: #808080;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300; 
+    text-decoration: none;
+}
+
+a:visited {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .icons {
@@ -33,6 +140,12 @@ p {
 
 .logo {
 	width: 100%;
+	margin: 30px 0;
+}
+
+.logo-about {
+	width: 100%;
+	margin: 30px 0;
 }
 
 .logo-footer {
@@ -52,10 +165,10 @@ p {
 	max-width: 100%;
 }
 
-/* This wraps everything up into a certain width*/
-.wrapper {
-	max-width: 960px;
-	margin: 0 auto;
+.home {
+	background-image: url('../images/grayscale-coffee-cup.jpg');
+	background-size: 100%;
+	min-height: 650px;
 }
 
 input {
@@ -70,15 +183,6 @@ input:focus {
   outline: 0;
 }
 
-button {
-  background: transparent;
-  text-decoration: none;
-  color: #000;
-  font-size: 18px;
-  padding: 0;
-  margin-top: 25px;
-  cursor: pointer;
-}
 
 /* This is making the grid expand to contain the floated columns*/
 .grid:after {
@@ -110,22 +214,6 @@ button {
 /* Lets the end of the column butt up to the edge of the browser*/
 [class*='column-']:last-of-type {
   padding-right: 0;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-}
-
-li {
-	list-style-type: none;
-	padding: 0px 0px .5% 0px;
-}
-
-footer {
-	text-align: center;
 }
 
 /* The columns for the grid*/
@@ -251,6 +339,15 @@ footer {
 	width: 50%;
 }
 
+.home {
+	background-repeat: no-repeat;
+	min-height: 200px;
+}
+
+.home img {
+	width: 100%
+}
+
 .logo {
 	width: 100%;
 }
@@ -260,8 +357,13 @@ footer {
 }
 
 .wrapper {
-	margin-left: 50px;
-	margin-right: 50px;
+
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+body {
+	padding: 0 50px;
 }
 
 nav {
@@ -271,6 +373,10 @@ nav {
 }
 
 .review {
+	display: none;
+}
+
+.logo-about {
 	display: none;
 }
 
@@ -284,6 +390,7 @@ nav {
 
 p {
 	line-height: 140%;
+	font-size: 14px;
 }
 
 }
